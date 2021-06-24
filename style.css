@@ -1,0 +1,25 @@
+@keyframes fundo-animado{
+    0%{
+        background-position: 0 0, 0 0;
+    }
+    50%{
+        background-position: 50% 0, 75% 0;
+    }
+    100%{
+        background-position: 100% 0, 100% 0;
+    }
+}
+
+body{
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color:white;*/
+    /*color: rgb(52, 165, 52);*/
+    background-image: url(./img/arvore-maca.png), url(./img/arvore-maca.png);
+    background-repeat: repeat-x, repeat-x;
+    animation: fundo-animado 20s linear infinite;
+}
